@@ -1,0 +1,594 @@
+{
+	"info": {
+		"_postman_id": "640988a4-ca05-4c32-900f-361001be03db",
+		"name": "Brain_Agriculture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7684913",
+		"_collection_link": "https://anatoly-kasparov.postman.co/workspace/Code~5ad75fb7-1113-4d7a-a6d6-ba84dc8c99b4/collection/7684913-640988a4-ca05-4c32-900f-361001be03db?action=share&source=collection_link&creator=7684913"
+	},
+	"item": [
+		{
+			"name": "Farmers",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/farmer/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"farmer",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/farmer/",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2391"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"957-n8Y4JZla0wNUaUz4tn6WhlXe1cQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 02:30:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"cpfOrCnpj\": \"55753752268\",\n        \"name\": \"Tiffany Labadie\",\n        \"farms\": [\n            {\n                \"id\": 3,\n                \"name\": \"Elvie\",\n                \"city\": \"Lake Friedafield\",\n                \"state\": \"Alabama\",\n                \"totalArea\": 250,\n                \"arableArea\": 150,\n                \"vegetationArea\": 100,\n                \"farmerId\": 2,\n                \"crops\": [\n                    {\n                        \"id\": 9,\n                        \"name\": \"Algodão\",\n                        \"farmId\": 3,\n                        \"cropTypeId\": 3,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 10,\n                        \"name\": \"Algodão\",\n                        \"farmId\": 3,\n                        \"cropTypeId\": 3,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 11,\n                        \"name\": \"Milho\",\n                        \"farmId\": 3,\n                        \"cropTypeId\": 2,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 12,\n                        \"name\": \"Soja\",\n                        \"farmId\": 3,\n                        \"cropTypeId\": 1,\n                        \"cropArea\": 10\n                    }\n                ]\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Martin\",\n                \"city\": \"Curtcester\",\n                \"state\": \"Mississippi\",\n                \"totalArea\": 250,\n                \"arableArea\": 150,\n                \"vegetationArea\": 100,\n                \"farmerId\": 2,\n                \"crops\": [\n                    {\n                        \"id\": 13,\n                        \"name\": \"Algodão\",\n                        \"farmId\": 4,\n                        \"cropTypeId\": 3,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 14,\n                        \"name\": \"Cana de Açúcar\",\n                        \"farmId\": 4,\n                        \"cropTypeId\": 5,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 15,\n                        \"name\": \"Algodão\",\n                        \"farmId\": 4,\n                        \"cropTypeId\": 3,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 16,\n                        \"name\": \"Milho\",\n                        \"farmId\": 4,\n                        \"cropTypeId\": 2,\n                        \"cropArea\": 10\n                    }\n                ]\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"cpfOrCnpj\": \"40180321889\",\n        \"name\": \"Mr. Felipe Gibson\",\n        \"farms\": [\n            {\n                \"id\": 5,\n                \"name\": \"Elvie\",\n                \"city\": \"East Nolanhaven\",\n                \"state\": \"Illinois\",\n                \"totalArea\": 250,\n                \"arableArea\": 150,\n                \"vegetationArea\": 100,\n                \"farmerId\": 3,\n                \"crops\": [\n                    {\n                        \"id\": 17,\n                        \"name\": \"Milho\",\n                        \"farmId\": 5,\n                        \"cropTypeId\": 2,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 18,\n                        \"name\": \"Cana de Açúcar\",\n                        \"farmId\": 5,\n                        \"cropTypeId\": 5,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 19,\n                        \"name\": \"Cana de Açúcar\",\n                        \"farmId\": 5,\n                        \"cropTypeId\": 5,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 20,\n                        \"name\": \"Algodão\",\n                        \"farmId\": 5,\n                        \"cropTypeId\": 3,\n                        \"cropArea\": 10\n                    }\n                ]\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Savion\",\n                \"city\": \"Bertworth\",\n                \"state\": \"North Dakota\",\n                \"totalArea\": 250,\n                \"arableArea\": 150,\n                \"vegetationArea\": 100,\n                \"farmerId\": 3,\n                \"crops\": [\n                    {\n                        \"id\": 21,\n                        \"name\": \"Café\",\n                        \"farmId\": 6,\n                        \"cropTypeId\": 4,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 22,\n                        \"name\": \"Cana de Açúcar\",\n                        \"farmId\": 6,\n                        \"cropTypeId\": 5,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 23,\n                        \"name\": \"Café\",\n                        \"farmId\": 6,\n                        \"cropTypeId\": 4,\n                        \"cropArea\": 10\n                    },\n                    {\n                        \"id\": 24,\n                        \"name\": \"Cana de Açúcar\",\n                        \"farmId\": 6,\n                        \"cropTypeId\": 5,\n                        \"cropArea\": 10\n                    }\n                ]\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"cpfOrCnpj\": \"07.698.859/0001-65\",\n        \"name\": \"João da Silva\",\n        \"farms\": [\n            {\n                \"id\": 9,\n                \"name\": \"Fazenda Primavera\",\n                \"city\": \"SP\",\n                \"state\": \"SP\",\n                \"totalArea\": 150.5,\n                \"arableArea\": 100.5,\n                \"vegetationArea\": 50,\n                \"farmerId\": 4,\n                \"crops\": [\n                    {\n                        \"id\": 28,\n                        \"name\": \"Soja\",\n                        \"farmId\": 9,\n                        \"cropTypeId\": 1,\n                        \"cropArea\": 40.5\n                    },\n                    {\n                        \"id\": 29,\n                        \"name\": \"Milho\",\n                        \"farmId\": 9,\n                        \"cropTypeId\": 2,\n                        \"cropArea\": 60\n                    }\n                ]\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Fazenda Verão\",\n                \"city\": \"SP\",\n                \"state\": \"SP\",\n                \"totalArea\": 300,\n                \"arableArea\": 200,\n                \"vegetationArea\": 100,\n                \"farmerId\": 4,\n                \"crops\": [\n                    {\n                        \"id\": 30,\n                        \"name\": \"Cana de Açúcar\",\n                        \"farmId\": 10,\n                        \"cropTypeId\": 5,\n                        \"cropArea\": 150\n                    }\n                ]\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/farmer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"farmer",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/farmer/4",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "561"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"231-AmvpcZCHnCXt8aIwicOqhDI+uCk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 02:29:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"cpfOrCnpj\": \"07.698.859/0001-65\",\n    \"name\": \"João da Silva\",\n    \"farms\": [\n        {\n            \"id\": 9,\n            \"name\": \"Fazenda Primavera\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"totalArea\": 150.5,\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50,\n            \"farmerId\": 4,\n            \"crops\": [\n                {\n                    \"id\": 28,\n                    \"name\": \"Soja\",\n                    \"farmId\": 9,\n                    \"cropTypeId\": 1,\n                    \"cropArea\": 40.5\n                },\n                {\n                    \"id\": 29,\n                    \"name\": \"Milho\",\n                    \"farmId\": 9,\n                    \"cropTypeId\": 2,\n                    \"cropArea\": 60\n                }\n            ]\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Fazenda Verão\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"totalArea\": 300,\n            \"arableArea\": 200,\n            \"vegetationArea\": 100,\n            \"farmerId\": 4,\n            \"crops\": [\n                {\n                    \"id\": 30,\n                    \"name\": \"Cana de Açúcar\",\n                    \"farmId\": 10,\n                    \"cropTypeId\": 5,\n                    \"cropArea\": 150\n                }\n            ]\n        }\n    ]\n}"
+						},
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/farmer/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-hEh4/qHh0s8S5oQUspGbO52TBzg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 02:29:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Fazendeiro não encontrado\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"João da Silva\",\n    \"cpfOrCnpj\": \"07.698.859/0001-65\",\n    \"farms\": [\n        {\n            \"name\": \"Fazenda Primavera\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50.0,\n            \"totalArea\": 150.5,\n            \"crops\": [\n                {\n                    \"name\": \"Milho\",\n                    \"cropArea\": 60.0\n                },\n                {\n                    \"name\": \"Soja\",\n                    \"cropArea\": 40.5\n                }\n            ]\n        },\n        {\n            \"name\": \"Fazenda Verão\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 200.0,\n            \"vegetationArea\": 100.0,\n            \"totalArea\": 300.0,\n            \"crops\": [\n                {\n                    \"name\": \"Cana de Açúcar\",\n                    \"cropArea\": 150.0\n                }\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/farmer/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"farmer",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201 Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"João da Silva\",\n    \"cpfOrCnpj\": \"922.006.630-05\",\n    \"farms\": [\n        {\n            \"name\": \"Fazenda Primavera\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50.0,\n            \"totalArea\": 150.5,\n            \"crops\": [\n                {\n                    \"name\": \"Milho\",\n                    \"cropArea\": 60.0\n                },\n                {\n                    \"name\": \"Soja\",\n                    \"cropArea\": 40.5\n                }\n            ]\n        },\n        {\n            \"name\": \"Fazenda Verão\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 200.0,\n            \"vegetationArea\": 100.0,\n            \"totalArea\": 300.0,\n            \"crops\": [\n                {\n                    \"name\": \"Cana de Açúcar\",\n                    \"cropArea\": 150.0\n                }\n            ]\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/farmer/",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "563"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"233-7ZrfA3FRzuFSZa+ahFk7NIGR0NM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 20 Sep 2024 23:22:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 12,\n    \"cpfOrCnpj\": \"922.006.630-05\",\n    \"name\": \"João da Silva\",\n    \"farms\": [\n        {\n            \"id\": 23,\n            \"name\": \"Fazenda Primavera\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"totalArea\": 150.5,\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50,\n            \"farmerId\": 12,\n            \"crops\": [\n                {\n                    \"id\": 84,\n                    \"name\": \"Soja\",\n                    \"cropArea\": 40.5,\n                    \"farmId\": 23,\n                    \"cropTypeId\": 1\n                },\n                {\n                    \"id\": 85,\n                    \"name\": \"Milho\",\n                    \"cropArea\": 60,\n                    \"farmId\": 23,\n                    \"cropTypeId\": 2\n                }\n            ]\n        },\n        {\n            \"id\": 24,\n            \"name\": \"Fazenda Verão\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"totalArea\": 300,\n            \"arableArea\": 200,\n            \"vegetationArea\": 100,\n            \"farmerId\": 12,\n            \"crops\": [\n                {\n                    \"id\": 86,\n                    \"name\": \"Cana de Açúcar\",\n                    \"cropArea\": 150,\n                    \"farmId\": 24,\n                    \"cropTypeId\": 5\n                }\n            ]\n        }\n    ]\n}"
+						},
+						{
+							"name": "409 Conflict",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"João da Silva\",\n    \"cpfOrCnpj\": \"07.698.859/0001-65\",\n    \"farms\": [\n        {\n            \"name\": \"Fazenda Primavera\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50.0,\n            \"totalArea\": 150.5,\n            \"crops\": [\n                {\n                    \"name\": \"Milho\",\n                    \"cropArea\": 60.0\n                },\n                {\n                    \"name\": \"Soja\",\n                    \"cropArea\": 40.5\n                }\n            ]\n        },\n        {\n            \"name\": \"Fazenda Verão\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 200.0,\n            \"vegetationArea\": 100.0,\n            \"totalArea\": 300.0,\n            \"crops\": [\n                {\n                    \"name\": \"Cana de Açúcar\",\n                    \"cropArea\": 150.0\n                }\n            ]\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/farmer/",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										""
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-UC0J5ksgNs83rGmi2xzJ047vOm4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 02:28:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"CPF ou CNPJ já cadastrado.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"João da Silva\",\n    \"cpfOrCnpj\": \"922.006.630-05\",\n    \"farms\": [\n        {\n            \"name\": \"Fazenda Teste\",\n            \"city\": \"RJ\",\n            \"state\": \"RJ\",\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50.0,\n            \"totalArea\": 150.5,\n            \"crops\": [\n                {\n                    \"name\": \"Milho\",\n                    \"cropArea\": 60.0\n                },\n                {\n                    \"name\": \"Soja\",\n                    \"cropArea\": 40.5\n                }\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/farmer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"farmer",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"João da Silva\",\n    \"cpfOrCnpj\": \"922.006.630-05\",\n    \"farms\": [\n        {\n            \"name\": \"Fazenda Primavera\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50.0,\n            \"totalArea\": 150.5,\n            \"crops\": [\n                {\n                    \"name\": \"Milho\",\n                    \"cropArea\": 60.0\n                },\n                {\n                    \"name\": \"Soja\",\n                    \"cropArea\": 40.5\n                }\n            ]\n        },\n        {\n            \"name\": \"Fazenda Verão\",\n            \"city\": \"SP\",\n            \"state\": \"SP\",\n            \"arableArea\": 200.0,\n            \"vegetationArea\": 100.0,\n            \"totalArea\": 300.0,\n            \"crops\": [\n                {\n                    \"name\": \"Cana de Açúcar\",\n                    \"cropArea\": 150.0\n                }\n            ]\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/farmer/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c-dBS3Tjj6pi+jWPJOThYFpPgkziw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Sep 2024 02:42:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Você só pode editar um fazendeiro existente.\"\n}"
+						},
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"João da Silva\",\n    \"cpfOrCnpj\": \"922.006.630-05\",\n    \"farms\": [\n        {\n            \"name\": \"Fazenda Teste\",\n            \"city\": \"RJ\",\n            \"state\": \"RJ\",\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50.0,\n            \"totalArea\": 150.5,\n            \"crops\": [\n                {\n                    \"name\": \"Milho\",\n                    \"cropArea\": 60.0\n                },\n                {\n                    \"name\": \"Soja\",\n                    \"cropArea\": 40.5\n                }\n            ]\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/farmer/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "342"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"156-UZgWpg2k6xWImOcypZRTPjeiJ54\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 02:27:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"cpfOrCnpj\": \"922.006.630-05\",\n    \"name\": \"João da Silva\",\n    \"farms\": [\n        {\n            \"id\": 11,\n            \"name\": \"Fazenda Teste\",\n            \"city\": \"RJ\",\n            \"state\": \"RJ\",\n            \"totalArea\": 150.5,\n            \"arableArea\": 100.5,\n            \"vegetationArea\": 50,\n            \"farmerId\": 1,\n            \"crops\": [\n                {\n                    \"id\": 31,\n                    \"name\": \"Soja\",\n                    \"farmId\": 11,\n                    \"cropTypeId\": 1,\n                    \"cropArea\": 40.5\n                },\n                {\n                    \"id\": 32,\n                    \"name\": \"Milho\",\n                    \"farmId\": 11,\n                    \"cropTypeId\": 2,\n                    \"cropArea\": 60\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/farmer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"farmer",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/farmer/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"farmer",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-lduGJaoHA8P/j0dq4u69TvGrjE4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 01:23:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messsage\": \"Fazendeiro não encontrado\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

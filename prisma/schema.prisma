@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Farmer {
+  id        Int    @id @default(autoincrement())
+  cpfOrCnpj String @unique
+  name      String @db.VarChar(50)
+  farms     Farm[]
+}
+
+model Farm {
+  id             Int     @id @default(autoincrement())
+  name           String  @db.VarChar(50)
+  city           String  @db.VarChar(50)
+  state          String  @db.VarChar(50)
+  totalArea      Float
+  arableArea     Float
+  vegetationArea Float
+  farmerId       Int?
+  crops          Crop[]
+  farmer         Farmer? @relation(fields: [farmerId], references: [id], onUpdate: NoAction)
+}
+
+model Crop {
+  id         Int      @id @default(autoincrement())
+  name       String   @db.VarChar(50)
+  farmId     Int
+  cropTypeId Int
+  cropArea   Float
+  cropType   CropType @relation(fields: [cropTypeId], references: [id])
+  farm       Farm     @relation(fields: [farmId], references: [id])
+}
+
+model CropType {
+  id    Int    @id @default(autoincrement())
+  name  String @unique @db.VarChar(50)
+  crops Crop[]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="1.745">
+  <testsuite name="FarmerController.getFarmerById" errors="0" failures="0" skipped="0" timestamp="2024-09-27T02:08:53" time="1.703" tests="2">
+    <testcase classname="FarmerController.getFarmerById should return 200 and the farmer data if the farmer is found" name="FarmerController.getFarmerById should return 200 and the farmer data if the farmer is found" time="0.068">
+    </testcase>
+    <testcase classname="FarmerController.getFarmerById should return 404 if the farmer is not found" name="FarmerController.getFarmerById should return 404 if the farmer is not found" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>
